@@ -1,7 +1,7 @@
 module circuitTEST();
   reg E;
-  reg [0:2] A;
-  wire [0:7] Y;
+  reg [2:0] A;
+  wire [7:0] Y;
 
   circuit fs(Y, E, A);
   initial begin
