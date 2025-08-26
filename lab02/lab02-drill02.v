@@ -1,4 +1,3 @@
-//This Verilog test bench illustrates the different Verilog operators
 module drill2_2;
   reg [3:0]Ctr, Xnr, Fdr;
 
