@@ -1,6 +1,7 @@
+//This Verilog test bench illustrates the different Verilog operators
 module drill2_2;
   reg [3:0]Ctr, Xnr, Fdr;
-  
+
   initial begin
     Ctr=4'd0; Fdr=4'd11;
     #5 Xnr = (Ctr !=0) ? (Ctr *+ 1) : ^Fdr;

@@ -1,6 +1,7 @@
 `timescale 10 ns / 100 ps
 /*The time unit is set to 10 ns. During the simulation all delay values will be multiplied by 10
 ns, and all delays will be rounded with 100 ps precision.*/
+
 `define SIZE 8
 `define STOP $finish
 `define REGME reg [8*31:0]
@@ -25,6 +26,6 @@ module testbench;
   initial begin
     $display(" a b borrowIn difference borrowOut time");
     $monitor("%b %b %b %b %b %d", a, b, borrowIn, diff, borrowOut, $time);
-  #10 `STOP;
+    #10 `STOP;
   end
 endmodule
